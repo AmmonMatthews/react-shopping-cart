@@ -21,6 +21,9 @@ function App() {
 	
 	};
 
+	const removeItem = item => {
+		setCart([...cart - item]);
+	}
 	return (
 		<div className="App">
 			<CartContext.Provider value={cart}>
